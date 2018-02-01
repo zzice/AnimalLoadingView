@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loading_layout_rl"
+    android:layout_width="170dp"
+    android:layout_height="200dp"
+    android:background="@drawable/loading_bg">
+
+    <ImageView
+        android:id="@+id/loading_mouse_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/loading_mouse_icon" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/loading_cat_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/loading_dog_icon" />
+
+        <ImageView
+            android:id="@+id/loading_eye_left_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3.5dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@drawable/loading_eyes_icon" />
+
+        <work.zice.loadingview.EyelidView
+            android:id="@+id/loading_eyelid_left_iv"
+            android:layout_width="24dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="3.5dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@drawable/loading_eyes_icon" />
+
+        <ImageView
+            android:id="@+id/loading_eye_right_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@drawable/loading_eyes_icon" />
+
+        <work.zice.loadingview.EyelidView
+            android:id="@+id/loading_eyelid_right_iv"
+            android:layout_width="24dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@drawable/loading_eyes_icon" />
+    </RelativeLayout>
+
+    <work.zice.loadingview.GraduallyTextView
+        android:id="@+id/graduallyTextView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="L O A D I N G ..."
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>
