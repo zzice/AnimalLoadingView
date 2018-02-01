@@ -1,5 +1,33 @@
 
 
+> Fork from [https://github.com/Rogero0o/CatLoadingView](https://github.com/Rogero0o/CatLoadingView)
+
+loadingview
+
+![dog_loading_original](D:\ZiceAndroidProjects\AnimalLoadingView\images\dog_loading_original.gif)
+
+
+
+### Added compared to the original
+
+#### Provide some methods
+
+```java
+// set view custom background resource
+setBgResId(@DrawableRes int bgResId)
+```
+
+```java
+// set loading text
+setMsgText(CharSequence msgText) || setMsgResId(@StringRes int msgResId)
+```
+
+
+
+![loading_view_google](D:\ZiceAndroidProjects\AnimalLoadingView\images\loading_view_google.gif)
+
+
+
 ### Usage
 
 #### Gradle
@@ -49,4 +77,22 @@ dependencies {
 
 
 
+#### Use it in code
 
+```java
+AnimalLoadingView loadingView = new AnimalLoadingView();
+// config loadingview
+// Example
+// loadingView.setMsgText("Google大法好");
+/**
+ * @param FragmentManager manager
+ * @param String tag
+ */
+loadingView.show(manager, tag);
+```
+
+
+
+### TODO
+
+- custom animal loading view # add dog , cat and many more

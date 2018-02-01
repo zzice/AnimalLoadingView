@@ -7,9 +7,12 @@ import android.widget.Button;
 
 import work.zice.loadingview.AnimalLoadingView;
 
+/**
+ * @desc
+ * @date 2018/02/01
+ * @author Zice
+ */
 public class MainActivity extends AppCompatActivity {
-
-    private Button mStartBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +22,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        mStartBtn = findViewById(R.id.start_btn);
-        mStartBtn.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.start_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AnimalLoadingView loadingView = new AnimalLoadingView();
+                loadingView.setMsgText("Google大法好");
                 loadingView.show(getSupportFragmentManager(),"");
             }
         });

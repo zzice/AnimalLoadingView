@@ -40,9 +40,9 @@ public class AnimalLoadingView extends DialogFragment {
 
     private Animation mOperatingAnim, mEyeLeftAnim, mEyeRightAnim;
 
-    private int mBgResId = -1;
-    private int mMsgResId = -1;
-    private CharSequence mMsgText = "";
+    private int bgResId = -1;
+    private int msgResId = -1;
+    private CharSequence msgText = "";
 
 
     public AnimalLoadingView() {
@@ -70,14 +70,14 @@ public class AnimalLoadingView extends DialogFragment {
 
     private void configView() {
 
-        if (mBgResId != -1) {
-            mLoadingLayoutRl.setBackgroundResource(mBgResId);
+        if (bgResId != -1) {
+            mLoadingLayoutRl.setBackgroundResource(bgResId);
         }
 
-        if (mMsgResId != -1) {
-            mGraduallyTextView.setText(mMsgResId);
-        } else if (!TextUtils.isEmpty(mMsgText)) {
-            mGraduallyTextView.setText(mMsgText);
+        if (msgResId != -1) {
+            mGraduallyTextView.setText(msgResId);
+        } else if (!TextUtils.isEmpty(msgText)) {
+            mGraduallyTextView.setText(msgText);
         }
 
         mLoadingEyelidLeftIv.setColor(Color.parseColor("#d0ced1"));
@@ -171,15 +171,17 @@ public class AnimalLoadingView extends DialogFragment {
         System.gc();
     }
 
-    public void setmBgResId(@DrawableRes int mBgResId) {
-        this.mBgResId = mBgResId;
+    public void setBgResId(@DrawableRes int bgResId) {
+        this.bgResId = bgResId;
     }
 
-    public void setmMsgText(CharSequence mMsgText) {
-        this.mMsgText = mMsgText;
+    public void setMsgText(CharSequence msgText) {
+        this.msgText = msgText;
     }
 
-    public void setmMsgResId(@StringRes int mMsgResId) {
-        this.mMsgResId = mMsgResId;
+    public void setMsgResId(@StringRes int msgResId) {
+        this.msgResId = msgResId;
     }
+
+
 }
