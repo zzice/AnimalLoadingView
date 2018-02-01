@@ -24,7 +24,7 @@ setMsgText(CharSequence msgText) || setMsgResId(@StringRes int msgResId)
 
 
 
-![loading_view_google](D:\ZiceAndroidProjects\AnimalLoadingView\images\loading_view_google.gif)
+![loading_view_google](https://github.com/zzice/AnimalLoadingView/blob/master/images/loading_view_google.gif)
 
 
 
@@ -96,3 +96,5 @@ loadingView.show(manager, tag);
 ### TODO
 
 - custom animal loading view # add dog , cat and many more
+
+
