@@ -4,7 +4,7 @@
 
 loadingview
 
-![dog_loading_original](D:\ZiceAndroidProjects\AnimalLoadingView\images\dog_loading_original.gif)
+![dog_loading_original](https://github.com/zzice/AnimalLoadingView/blob/master/images/dog_loading_original.gif)
 
 
 
